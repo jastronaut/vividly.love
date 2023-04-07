@@ -41,7 +41,7 @@ body {
 .background {
   width: 100%;
   color: #fff;
-  background: linear-gradient(-45deg, #df4a1c, #e73c7e, #23a6d5, #05ce9f);
+  background: linear-gradient(-45deg, #be4bdb, #e73c7e, #23a6d5, #05ce9f);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
@@ -66,9 +66,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 24px;
   border-radius: 10px;
-  height: 200px;
 }
 
 @media (min-width: 768px) {
@@ -79,7 +78,7 @@ main {
 
 a,
 a:visited {
-  color: #e73c7e;
+  color: #be4bdb;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -89,4 +88,47 @@ a:visited {
   font-size: 20px;
   text-align: center;
   margin: 36px;
+}
+
+.form-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+label {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #2c2e33;
+  border: 1px solid #2c2e33;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+#button {
+  font-size: 16px;
+  background-color: #be4bdb;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #802797;
+  transition: all 0.3s ease;
+}
+
+#signup-success {
+  margin-top: 12px;
+  display: none;
+  font-size: 16px;
 }
