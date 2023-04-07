@@ -3,6 +3,16 @@ const form = document.getElementById("waitlist-form");
 
 function sendData() {
   const email = document.getElementById("email").value;
+
+  if (!email) {
+    return;
+  }
+
+  // make sure email is valid
+  if (!email.includes("@")) {
+    return;
+  }
+
   fetch(`https://vividly-backend.herokuapp.com/v0/waitlist`, {
     method: "POST",
     headers: {
